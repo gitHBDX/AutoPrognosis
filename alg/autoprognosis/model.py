@@ -1008,10 +1008,11 @@ def evaluate_clf(X, Y, model_input, n_folds, visualize=False):
 
 def evaluate_ens(X, Y, model_input, n_folds, visualize=False):
     
+    n_nan = int(X.isnull().sum().sum())
     logger.info('+evaluate_ens shape x:{} y:{}'.format(X.shape, Y.shape))
     logger.info('nan x:{} {}'.format(
-        sum(np.ravel(np.isnan(X))),
-        sum(np.ravel(np.isnan(X)))/len(np.ravel(X))))
+        n_nan,
+        n_nan/len(np.ravel(X))))
 
     metric_      = np.zeros(n_folds)
     metric_ens   = np.zeros(n_folds)
