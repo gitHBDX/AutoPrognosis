@@ -23,7 +23,7 @@ conda install mamba -c conda-forge -y
 mamba install tensorflow-gpu keras -c anaconda -y
 
 # Install python stuff from forge
-mamba install pandas gpyopt xgboost sets scikit-learn scipy pivottablejs rpy2 matplotlib tqdm requests jupyter seaborn -c conda-forge -y
+mamba install pandas gpyopt xgboost scikit-learn scipy pivottablejs rpy2 matplotlib tqdm requests jupyter seaborn -c conda-forge -y
 
 # Install r stuff from forge
 mamba install r-essentials r-base r-missForest r-glmnet r-ranger r-xmisc r-domc r-coxboost r-randomforestsrc r-party r-softimpute r-coin -c conda-forge -y
